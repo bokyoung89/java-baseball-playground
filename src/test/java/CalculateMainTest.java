@@ -16,4 +16,12 @@ public class CalculateMainTest {
         assertThat(util.stringSplit(str)).containsExactly("1", "+", "2");
     }
 
+    @Test
+    @DisplayName("문자열을 숫자로 출력")
+    void input_test(){
+
+        String str = "1";
+
+        assertThat(Integer.parseInt(str)).isEqualTo(1);
+    }
 }
