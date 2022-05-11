@@ -1,4 +1,3 @@
-import javax.swing.plaf.synth.SynthStyle;
 import java.util.Scanner;
 
 public class CalculateMain {
@@ -15,5 +14,13 @@ public class CalculateMain {
         String[] values;
         values = util.stringSplit(value);
 
+        //3.입력한 문자열을 숫자와 기호로 출력
+        int first = Integer.parseInt(values[0]);
+
+        for(int i = 1; i < values.length; i += 2){
+            String symbol = values[i];
+
+            int second = Integer.parseInt(values[i+1]);
+        }
     }
 }
