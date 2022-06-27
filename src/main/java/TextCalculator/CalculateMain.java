@@ -1,3 +1,5 @@
+package TextCalculator;
+
 import java.util.Scanner;
 
 public class CalculateMain {

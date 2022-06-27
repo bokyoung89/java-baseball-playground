@@ -1,3 +1,7 @@
+package TextCalculatorTest;
+
+import TextCalculator.StringUtil;
+import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -13,7 +17,7 @@ public class CalculateMainTest {
 
         String str = "1 + 2";
 
-        assertThat(util.stringSplit(str)).containsExactly("1", "+", "2");
+        Assertions.assertThat(util.stringSplit(str)).containsExactly("1", "+", "2");
     }
 
     @Test

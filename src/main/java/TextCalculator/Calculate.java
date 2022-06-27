@@ -1,22 +1,24 @@
+package TextCalculator;
+
 public class Calculate {
 
-    int add(int i, int j) {
+    public int add(int i, int j) {
         return i + j;
     }
 
-    int minus(int i, int j) {
+    public int minus(int i, int j) {
         return i - j;
     }
 
-    int multiply(int i, int j) {
+    public int multiply(int i, int j) {
         return i * j;
     }
 
-    int divide(int i, int j) {
+    public int divide(int i, int j) {
         return i / j;
     }
 
-    static int calculate(int first, String symbol, int second) {
+    public static int calculate(int first, String symbol, int second) {
         int result = 0;
         if (symbol.equals("+")) {
             result = first + second;
