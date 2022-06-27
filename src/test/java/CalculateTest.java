@@ -30,4 +30,14 @@ public class CalculateTest {
     void divideTest(){
         assertThat(cal.divide(6,2)).isEqualTo(3);
     }
+
+    @Test
+    @DisplayName("계산 구현 테스트")
+    void calculate(){
+        int first = 2;
+        String symbol = "*";
+        int second = 4;
+
+        assertThat(cal.calculate(first, symbol, second)).isEqualTo(8);
+    }
 }
