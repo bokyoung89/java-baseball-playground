@@ -1,26 +1,16 @@
-## [NEXTSTEP 플레이그라운드의 미션 진행 과정](https://github.com/next-step/nextstep-docs/blob/master/playground/README.md)
+## 자바 플레이그라운드 with TDD, 클린 코드
 
 ---
-## 학습 효과를 높이기 위해 추천하는 미션 진행 방법
-
----
-1. 피드백 강의 전까지 미션 진행 
-> 피드백 강의 전까지 혼자 힘으로 미션 진행. 미션을 진행하면서 하나의 작업이 끝날 때 마다 add, commit
-> 예를 들어 다음 숫자 야구 게임의 경우 0, 1, 2단계까지 구현을 완료한 후 push
-
-![mission baseball](https://raw.githubusercontent.com/next-step/nextstep-docs/master/playground/images/mission_baseball.png)
-
----
-2. 피드백 앞 단계까지 미션 구현을 완료한 후 피드백 강의를 학습한다.
-
----
-3. Git 브랜치를 master 또는 main으로 변경한 후 피드백을 반영하기 위한 새로운 브랜치를 생성한 후 처음부터 다시 미션 구현을 도전한다.
-
-```
-git branch -a // 모든 로컬 브랜치 확인
-git checkout master // 기본 브랜치가 master인 경우
-git checkout main // 기본 브랜치가 main인 경우
-
-git checkout -b 브랜치이름
-ex) git checkout -b apply-feedback
-```
+## 실습 순서
+1. 학습테스트 실습
+  - [x] String 클래스에 대한 학습 테스트
+    - [x] split 분리 테스트
+    - [x] substring 문자열 자르기 테스트
+    - [x] charAt 특정 위치의 문자 반환 테스트
+    - [x] 문자열 범위 벗어났을 때 예외 테스트(IndexOutOfBoundsException)
+  - [x] Set Collection에 대한 학습 테스트
+    - [x] Set의 크기 확인 테스트(size() 메서드)
+    - [x] ParameterizedTest 활용하여 여러 개의 파리미터 테스트
+    - [x] CsvSource 활용하여 입력 값에 따라 결과 값이 다른 경우 테스트
+2. 문자열 계산기
+3. 숫자야구게임 구현
