@@ -9,6 +9,13 @@ public class CalculateMain {
         String value = scanner.nextLine();
 
         StringUtil util = new StringUtil();
-        String[] result = util.split(value);
+        String[] splitValue = util.split(value);
+        for(int i=0; i<splitValue.length; i++){
+            System.out.println(splitValue[i]);
+        }
+
+        ArithmeticOperations arithmeticOperations = new ArithmeticOperations();
+        int result = arithmeticOperations.calcuateString(splitValue);
+        System.out.println(result);
     }
 }

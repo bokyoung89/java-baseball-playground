@@ -29,7 +29,6 @@ public class StringTest {
         String words ="1,2";
         assertThat(words.split(",")).containsExactly("1","2");
     }
-
     @DisplayName("split 분리 테스트_02")
     @Test
     void splitTest_02() {
