@@ -1,6 +1,7 @@
 package BaseBallGame;
 
 import BaseballGame.Judgement;
+import BaseballGame.Referee;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -24,6 +25,14 @@ public class JudgementTest {
     void hasPlaceTest( ) {
         boolean place = judgement.hasPlace(Arrays.asList(3,2,6),0,3);
         assertThat(place).isEqualTo(true);
+    }
+
+    @DisplayName("컴퓨터의 3자리 수와 플레이어와 3자리 수 비교 테스트")
+    @Test
+    void compareTest() {
+        Referee referee = new Referee();
+        String result = referee.Compare(Arrays.asList(3,6,2), Arrays.asList(3,2,6));
+        assertThat(result).isEqualTo("2볼 1스트라이크");
     }
 }
 
