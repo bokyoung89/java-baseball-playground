@@ -21,7 +21,7 @@ public class BallGeneratorTest {
 
     @DisplayName("숫자 1부터 9까지 중복되지 않는 임의의 수 3자리 추출 테스트")
     @Test
-    void random3BallTest() {
+    void createRandomNumbersTest() {
         BallGenerator ball = new BallGenerator();
         assertThat(ball.createRandomNumbers()).containsExactly(2,3,4);
     }
