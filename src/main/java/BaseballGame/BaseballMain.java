@@ -29,6 +29,7 @@ public class BaseballMain {
     * */
     public static void main(String[] args) {
 
+        do {
             BallGenerator ball = new BallGenerator();
             List<Integer> computer = ball.createRandomNumbers();
             System.out.println(computer);
@@ -40,6 +41,8 @@ public class BaseballMain {
                 result = referee.Compare(computer, askNumbers());
                 System.out.println(result);
             }
+        } while(playagain());
+
     }
 
     public static List<Integer> askNumbers() {
@@ -52,5 +55,16 @@ public class BaseballMain {
             numbers.add(Integer.valueOf(number));
         }
         return numbers;
+    }
+
+    public static boolean playagain() {
+        System.out.println("3개의 숫자를 모두 맞히셨습니다! 게임 종료");
+        System.out.println("게임을 새로 시작하려면 1, 종료하려면 2를 입력하세요.");
+        Scanner scanner = new Scanner(System.in);
+        char choice = scanner.next().charAt(0);
+        if(choice == '1'){
+            return true;
+        }
+        return false;
     }
 }
